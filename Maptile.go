@@ -20,7 +20,7 @@ func main() {
 		a.Quit()
 	}()
 	w.Resize(fyne.NewSize(800, 600))
-	w.SetContent(container.NewGridWithColumns(
+	w.SetContent(container.NewGridWithRows(
 		3,
 		t,
 		m,
