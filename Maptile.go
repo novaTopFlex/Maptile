@@ -13,7 +13,7 @@ func main() {
 	w := a.NewWindow("Terminal")
 	m := widget.NewMap()
 	t := terminal.New()
-  s := terminal.New()
+  	s := terminal.New()
 
 	go func() {
 		_ = t.RunLocalShell()
