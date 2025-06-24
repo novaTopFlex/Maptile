@@ -17,7 +17,10 @@ func main() {
 
 	go func() {
 		_ = t.RunLocalShell()
-		_1 = s.RunLocalShell()
+		a.Quit()
+	}()
+	go func() {
+		_ = s.RunLocalShell()
 		a.Quit()
 	}()
 	w.Resize(fyne.NewSize(800, 600))
